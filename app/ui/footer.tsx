@@ -4,6 +4,9 @@ export function Footer() {
             <p>
                 Built in Next.js 16, React 19, and Tailwind v4
             </p>
+            <p>
+                Design from Hostinger
+            </p>
         </footer>
     );
 }

@@ -1,6 +1,12 @@
-import { profile } from "@/app/lib/content";
 import { Nav } from "./nav";
 import { SocialLinks } from "./social-links";
+import { TechTag } from "@/app/ui/components/TechTag"
+
+export const profile = {
+    name: "Jansen Yan",
+    title: "Full Stack Engineer",
+    tagline: "",
+};
 
 export function LeftColumn() {
     return (
@@ -15,6 +21,10 @@ export function LeftColumn() {
                     {profile.title}
                 </h2>
                 <p className="mt-4 max-w-xs leading-normal">{profile.tagline}</p>
+                <TechTag>
+                    <div className = "animate-pulse rounded-full w-2 h-2 bg-accent"></div>
+                    <span>{"Open to Work"}</span>
+                </TechTag>
                 <Nav />
             </div>
             <SocialLinks />

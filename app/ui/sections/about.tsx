@@ -1,6 +1,11 @@
-import { about } from "@/app/lib/content";
+export const about: string[] = [
+    "I'm a developer who enjoys turning hard problems into simple and intuitive products that make people's lives easier.",
+    "Over the past few years, I've worked in small company and start up environments, shipping customer-facing features across the full stack.",
+    "My recent experiences have been in Node.js, Python, React and Typescript, but I quickly learn new technologies and processes to meet the needs of any team.",
+    "Outside of software development, I am an avid yoyo player and create tutorials to teach complex yoyo tricks.",
+];
 
-export function About() {
+export function About(){
     return (
         <section
             id="about"

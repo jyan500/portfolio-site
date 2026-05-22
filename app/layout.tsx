@@ -3,9 +3,9 @@ import { inter, jetbrainsMono } from "@/app/ui/fonts";
 import "./globals.css";
 
 export const metadata: Metadata = {
-    title: "Jansen Yan — Full Stack Developer",
+    title: "Jansen Yan — Full Stack Engineer",
     description:
-        "Jansen Yan is a full stack developer who builds accessible, performant web applications from concept to deployment.",
+        "Full stack engineer with a passion for building software that makes people's lives easier.",
 };
 
 export default function RootLayout({

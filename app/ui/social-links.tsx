@@ -1,12 +1,23 @@
 import { Mail } from "lucide-react";
-import { FaGithub, FaLinkedin } from "react-icons/fa6";
-import { socials } from "@/app/lib/content";
+import { FaGithub, FaLinkedin, FaYoutube } from "react-icons/fa6";
 
 const iconMap = {
     github: FaGithub,
     linkedin: FaLinkedin,
     mail: Mail,
+    youtube: FaYoutube,
 } as const;
+
+export const socials = [
+    { label: "GitHub", href: "https://github.com/jyan500", icon: "github" as const },
+    {
+        label: "LinkedIn",
+        href: "https://www.linkedin.com/in/jansenyan",
+        icon: "linkedin" as const,
+    },
+    { label: "Youtube", href: "https://youtube.com/@jyanyoyo", icon: "youtube" as const },
+    { label: "Email", href: "mailto:jyan500@gmail.com", icon: "mail" as const },
+];
 
 export function SocialLinks() {
     return (
