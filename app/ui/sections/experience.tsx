@@ -25,7 +25,7 @@ export const experience: Experience[] = [
         role: "Software Engineer",
         company: "Rhumbix",
         url: "https://rhumbix.com",
-        description: "Designed and implemented web and mobile features for construction administration software, saving manual labor for contractors and subcontracting companies.",
+        description: "Designed and implemented web and mobile features for construction administration software, saving manual labor for contractors and subcontractors.",
         tech: ["TypeScript", "React", "AG Grid", "Python", "Django", "Django Rest Framework", "React Native", "AWS S3", "LaunchDarkly", "Docker", "Travis CI", "PostgreSQL"],
     },
     {
@@ -80,9 +80,9 @@ function ExperienceItem({ item }: { item: Experience }) {
             {item.description}
           </p>
           <ul className="mt-2 flex flex-wrap" aria-label="Technologies used">
-            {item.tech.map((t) => (
-                <li className="mr-1.5 mt-2">
-                    <TechTag key={t}>{t}</TechTag>
+            {item.tech.map((t, i) => (
+                <li key={`tech_${t}_i`} className="mr-1.5 mt-2">
+                    <TechTag>{t}</TechTag>
                 </li>
             ))}
           </ul>
