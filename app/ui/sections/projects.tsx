@@ -7,7 +7,7 @@ export type Project = {
     description: React.ReactNode | string;
     tech: string[];
     href?: string;
-    github?: string;
+    source?: string;
     imageAlt: string;
     imageSrc: string;
 };
@@ -87,13 +87,13 @@ const Source = ({item}: SourceProps) => {
     return (
         <div className="mt-2">
             <a
-                href={item.source}
+                href={item?.source ?? ""}
                 target="_blank"
                 rel="noreferrer noopener"
                 aria-label={`${item.title} source on GitHub (opens in a new tab)`}
                 className="inline-flex items-center gap-1.5 text-sm text-muted-light hover:text-accent focus-visible:text-accent transition-colors"
             >
-                {getSourceIcon(item.source)}
+                {getSourceIcon(item?.source ?? "")}
             </a>
         </div>
     )
